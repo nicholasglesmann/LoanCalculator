@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/monthlyPaymentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monthly_payment"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyPaymentNumber" />
+
+    <TextView
+        android:id="@+id/monthlyPaymentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1213_28"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPaymentLabel"
+        app:layout_constraintBottom_toTopOf="@+id/totalInterestCostLabel" />
+
+    <TextView
+        android:id="@+id/totalInterestCostLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_interest_cost_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPaymentNumber"
+        app:layout_constraintBottom_toTopOf="@+id/totalInterestCostNumber" />
+
+    <TextView
+        android:id="@+id/totalInterestCostNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$45,593.11"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalInterestCostLabel"
+        app:layout_constraintBottom_toTopOf="@+id/totalLoanCostLabel" />
+
+    <TextView
+        android:id="@+id/totalLoanCostLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_loan_cost_label"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalInterestCostNumber"
+        app:layout_constraintBottom_toTopOf="@+id/totalLoanCostNumber"/>
+
+    <TextView
+        android:id="@+id/totalLoanCostNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$145,593.11"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalLoanCostLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
