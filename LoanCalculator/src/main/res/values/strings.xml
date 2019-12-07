@@ -5,7 +5,9 @@
     <string name="interest_rate_label">Interest Rate:</string>
     <string name="calculate_button">Calculate</string>
     <string name="monthly_payment">Monthly Payment:</string>
-    <string name="_1213_28">$1213.28</string>
+    <string name="monthlyPaymentNumber"></string>
+    <string name="totalInterestCostNumber"></string>
+    <string name="totalLoanCostNumber"></string>
     <string name="total_interest_cost_label">Total Interest Cost:</string>
     <string name="total_loan_cost_label">Total Loan Cost:</string>
 </resources>
